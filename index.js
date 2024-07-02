@@ -7,6 +7,8 @@ app.get('/api/random', (req, res) => {
   res.json({ random: randomNumber });
 });
 
-app.listen( () => {
-  console.log("Server läuft");
-});
+app.listen(port, () => {
+    console.log(`Server läuft auf http://localhost:${port}/api/random`);
+  });
+  
+ 
